@@ -1,4 +1,4 @@
-@page REF_GETTING_STARTED Getting Started
+@page REF_GETTING_STARTED Doxygen Documentation
 
 # Download and Install Doxygen
 

@@ -18,6 +18,7 @@
  # Sections
 
  - @subpage REF_GETTING_STARTED
+ - @subpage REF_CODE_FORMATTER
  - @subpage Architecture
  - @subpage FAQ
 

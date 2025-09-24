@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project Starter Kit: D:/ProjectStarterKit/Code/src/log_messages.cpp Source File</title>
+<title>Project Starter Kit: Clang-Format</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('log__messages_8cpp_source.html','',''); });
+$(function(){initNavTree('_r_e_f__c_o_d_e__f_o_r_m_a_t_t_e_r.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -87,29 +87,46 @@ $(function(){initNavTree('log__messages_8cpp_source.html','',''); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">log_messages.cpp</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Clang-Format </div></div>
 </div><!--header-->
 <div class="contents">
-<a href="log__messages_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="log__messages_8hpp.html">log_messages.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="log__messages_8hpp.html#ad9efe89b2c8655485d8c8181384c9b8f">    4</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="log__messages_8cpp.html#ad9efe89b2c8655485d8c8181384c9b8f">print_init_message</a>()</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>     </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>     std::cout &lt;&lt; initialization_message;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
-</div>
-<div class="ttc" id="alog__messages_8cpp_html_ad9efe89b2c8655485d8c8181384c9b8f"><div class="ttname"><a href="log__messages_8cpp.html#ad9efe89b2c8655485d8c8181384c9b8f">print_init_message</a></div><div class="ttdeci">void print_init_message()</div><div class="ttdoc">The function display initialization message.</div><div class="ttdef"><b>Definition</b> <a href="#l00004">log_messages.cpp:4</a></div></div>
-<div class="ttc" id="alog__messages_8hpp_html"><div class="ttname"><a href="log__messages_8hpp.html">log_messages.hpp</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+Download and Install Clang-Format</h1>
+<p>Download here[<a href="https://llvm.org/builds">https://llvm.org/builds</a>] and install (<a href="https://medium.com/@swargarajd/installing-clang-formatter-in-visual-studio-code-for-windows-9a4fc882785c">https://medium.com/@swargarajd/installing-clang-formatter-in-visual-studio-code-for-windows-9a4fc882785c</a>)</p>
+<ul>
+<li>do not remember to add executable into system path</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Install Extension on VSCode</h1>
+<p>Install extension for vscode market [<a href="https://marketplace.visualstudio.com/items?itemName=xaver.clang-format">https://marketplace.visualstudio.com/items?itemName=xaver.clang-format</a>]</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Configure VSCode Setting</h1>
+<ul>
+<li>create a file for formatting style &gt; named <span class="tt">.clang-format</span> at root.</li>
+<li>fill inside this file whatever you want</li>
+<li>Add executable of clang formatter in .settings.json &gt; <span class="tt">"clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe"</span></li>
+<li>also you can enable/disable auto format on save and formatter &gt; <div class="fragment"><div class="line"><span class="stringliteral">&quot;[cpp]&quot;</span>: {</div>
+<div class="line">        <span class="stringliteral">&quot;editor.defaultFormatter&quot;</span>: <span class="stringliteral">&quot;xaver.clang-format&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;editor.formatOnSave&quot;</span>: <span class="keyword">false</span></div>
+<div class="line">    },</div>
+</div><!-- fragment --> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="dir_23fdee2f6995db16c755697cdf620cf4.html">Code</a></li><li class="navelem"><a href="dir_562250f81d431c2e4bf06f5f84066d42.html">src</a></li><li class="navelem"><a href="log__messages_8cpp.html">log_messages.cpp</a></li>
+    <li class="navelem"><a href="index.html">Documentation Guide</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
