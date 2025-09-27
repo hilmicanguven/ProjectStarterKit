@@ -21,6 +21,7 @@
  - @subpage REF_CODE_FORMATTER
  - @subpage REF_CMAKE_TOOL
  - @subpage REF_GIT_TOOL
+ - @subpage REF_TEST_TOOL
  - @subpage Architecture
  - @subpage FAQ
 

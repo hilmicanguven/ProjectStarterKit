@@ -63,4 +63,13 @@ set_target_properties(ProjectStarterKit PROPERTIES
 # set(CMAKE_C_COMPILER "C:/msys64/ucrt64/bin/gcc")
 # $ cmake -DCMAKE_CXX_COMPILER=C:/msys64/ucrt64/bin/g++ -DCMAKE_C_COMPILER=C:/msys64/ucrt64/bin/gcc
 
+add_subdirectory(${CMAKE_SOURCE_DIR}/Tools/gtest)
+
+target_link_libraries(ProjectStarterKit PUBLIC gtest)
+
+enable_testing()
+
+# Include the tests directory
+add_subdirectory(Tests) 
+
 # # Later: GoogleTest and unit test setup will go here

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Project Starter Kit: Documentation Guide</title>
+<title>Project Starter Kit: Google Test Unit Test Framework</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('index.html','',''); });
+$(function(){initNavTree('_r_e_f__t_e_s_t__t_o_o_l.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -88,44 +88,56 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Documentation Guide </div></div>
+  <div class="headertitle"><div class="title">Google Test Unit Test Framework </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Welcome to the <b>Project Starter Kit</b> documentation!</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
-Overview</h1>
-<p>This project is designed to do amazing things. Supported hardwares:</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">CPU Architecture  </th><th class="markdownTableHeadNone">Vendor(s)  </th><th class="markdownTableHeadNone">Notes  </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">x86_64  </td><td class="markdownTableBodyNone">Intel, AMD  </td><td class="markdownTableBodyNone">Most common target architecture  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">ARMv8-A (64-bit)  </td><td class="markdownTableBodyNone">ARM, Apple, Qualcomm  </td><td class="markdownTableBodyNone">Used in mobile and embedded devices  </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">RISC-V  </td><td class="markdownTableBodyNone">SiFive, Alibaba  </td><td class="markdownTableBodyNone">Experimental support in progress  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">PowerPC  </td><td class="markdownTableBodyNone">IBM  </td><td class="markdownTableBodyNone">Legacy support only  </td></tr>
-</table>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
-Sections</h1>
+<div class="textblock"><h1 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+Integrate Google Test (Gtest) into Project</h1>
+<p>I can add GTest framework into my project as git submodules. I created <b>Tools</b> directory to hold google test source codes. Tools directory may later have contain other tool.</p>
 <ul>
-<li><a class="el" href="_r_e_f__g_e_t_t_i_n_g__s_t_a_r_t_e_d.html">Doxygen Documentation</a></li>
-<li><a class="el" href="_r_e_f__c_o_d_e__f_o_r_m_a_t_t_e_r.html">Clang-Format</a></li>
-<li><a class="el" href="_r_e_f__c_m_a_k_e__t_o_o_l.html">CMake Code Compilation</a></li>
-<li><a class="el" href="_r_e_f__g_i_t__t_o_o_l.html">Git Version Kontrol</a></li>
-<li><a class="el" href="_r_e_f__t_e_s_t__t_o_o_l.html">Google Test Unit Test Framework</a></li>
-<li>Architecture</li>
-<li>FAQ </li>
+<li><span class="tt">git submodule add <a href="https://github.com/google/googletest.git">https://github.com/google/googletest.git</a> ./Tools/gtest</span></li>
+<li><span class="tt">git submodule update --init --recursive</span></li>
+<li>add this library(sub-directory) to main cmakelists.txt- <div class="fragment"><div class="line">add_subdirectory(${CMAKE_SOURCE_DIR}/Tools/gtest)</div>
+<div class="line">target_link_libraries(ProjectStarterKit PUBLIC gtest)</div>
+<div class="line">enable_testing()</div>
+<div class="line">add_subdirectory(tests) </div>
+</div><!-- fragment --></li>
 </ul>
-</div></div><!-- PageDoc -->
-<a href="doxygen_crawl.html"></a>
-</div><!-- contents -->
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+Create CMake for Tests</h1>
+<ul>
+<li>create another CMakeLists.txt for the test codes. fill inside to find source codes and link</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+create test source files</h1>
+<ul>
+<li>create test codes to tast your interfaces</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+Compile and Run Tests</h1>
+<ul>
+<li>compile project as usual <div class="fragment"><div class="line">cd build</div>
+<div class="line">cmake ..</div>
+<div class="line">cmake --build .</div>
+<div class="line"> </div>
+<div class="line"> ctest <span class="comment">// (or --verbose )</span></div>
+</div><!-- fragment --> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a href="index.html">Documentation Guide</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>
