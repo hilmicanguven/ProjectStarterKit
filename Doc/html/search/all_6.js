@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['install_20clang_20format_0',['Download and Install Clang-Format',['../_r_e_f__c_o_d_e__f_o_r_m_a_t_t_e_r.html#autotoc_md0',1,'']]],
-  ['install_20doxygen_1',['Download and Install Doxygen',['../_r_e_f__g_e_t_t_i_n_g__s_t_a_r_t_e_d.html#autotoc_md3',1,'']]],
-  ['install_20extension_20on_20vscode_2',['Install Extension on VSCode',['../_r_e_f__c_o_d_e__f_o_r_m_a_t_t_e_r.html#autotoc_md1',1,'']]]
+  ['git_20version_20kontrol_0',['Git Version Kontrol',['../_r_e_f__g_i_t__t_o_o_l.html',1,'index']]],
+  ['git_2emd_1',['git.md',['../git_8md.html',1,'']]],
+  ['gitignore_2',['.gitignore',['../_r_e_f__g_i_t__t_o_o_l.html#autotoc_md9',1,'']]],
+  ['guide_3',['Documentation Guide',['../index.html',1,'']]]
 ];

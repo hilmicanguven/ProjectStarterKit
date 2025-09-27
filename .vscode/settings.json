@@ -60,13 +60,12 @@
     "iostream": "cpp"
   },
   "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-
   "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format",
-        "editor.formatOnSave": false
-    },
-    "[c]": {
-        "editor.defaultFormatter": "xaver.clang-format",
-        "editor.formatOnSave": false
-    }
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": false
+  },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSave": false
+  }
 }

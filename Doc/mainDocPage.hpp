@@ -19,6 +19,8 @@
 
  - @subpage REF_GETTING_STARTED
  - @subpage REF_CODE_FORMATTER
+ - @subpage REF_CMAKE_TOOL
+ - @subpage REF_GIT_TOOL
  - @subpage Architecture
  - @subpage FAQ
 
